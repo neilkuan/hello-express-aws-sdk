@@ -1,0 +1,31 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "This demo express project",
+  "main": "source/server.ts",
+  "scripts": {
+    "build": "rm -rf build/ && npx prettier --write source && tsc"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Neil Kuan",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-sts": "^3.27.0",
+    "@aws-sdk/credential-providers": "^3.27.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "@types/express": "^4.17.1",
+    "@aws-sdk/client-sts": "^3.27.0",
+    "@types/body-parser": "^1.19.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^16.7.1"
+  }
+}
