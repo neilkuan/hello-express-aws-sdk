@@ -29,16 +29,16 @@ my-stack-dev.serviceServiceURLD17005C1 = http://my-st-servi-QYELWYOEDG2S-1359545
 ## Check use ECS task role (EC2)
 ```bash
 curl http://my-st-servi-xxxxx-xxxx.ap-xxxx-1.elb.amazonaws.com/sample/whoami
-{"message":"You are authenticated as arn:aws:sts::295273672130:assumed-role/my-stack-dev-fargatetasksTaskRole84C07681-1D6S8DFE7PSQ1/19d0d74121ad47eba2d7e5fc641a0da5"}
+{"message":"You are authenticated as arn:aws:sts::123456789012:assumed-role/my-stack-dev-fargatetasksTaskRole84C07681-1D6S8DFE7PSQ1/19d0d74121ad47eba2d7e5fc641a0da5"}
 ```
 
 ## Check use ECS task role (Fargate)
 ```bash
 curl http://my-st-Farga-xxxxx-xxxx.ap-xxxx-1.elb.amazonaws.com/sample/whoami
-{"message":"You are authenticated as arn:aws:sts::295273672130:assumed-role/my-stack-dev-fargatetasksTaskRole84C07681-1D6S8DFE7PSQ1/19d0d74121ad47eba2d7e5fc641a0da5"}
+{"message":"You are authenticated as arn:aws:sts::123456789012:assumed-role/my-stack-dev-fargatetasksTaskRole84C07681-1D6S8DFE7PSQ1/19d0d74121ad47eba2d7e5fc641a0da5"}
 ```
 
 ## To destroy
 ```bash
-yarn
+cdk destrpy 
 ```
